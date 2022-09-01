@@ -1,5 +1,20 @@
-[gd_scene format=3 uid="uid://dkwlbdbklet0n"]
+[gd_scene load_steps=2 format=3 uid="uid://dkwlbdbklet0n"]
+
+[ext_resource type="TileSet" uid="uid://bhytqvetoe3m4" path="res://Assets/enviroment.tres" id="1_jgn1d"]
 
 [node name="Node2d" type="Node2D"]
 
-[node name="Node" type="Node" parent="."]
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("1_jgn1d")
+cell_quadrant_size = 1
+format = 2
+layer_0/name = "floor"
+layer_0/y_sort_enabled = true
+layer_0/tile_data = PackedInt32Array(131071, 232, 0, 131072, 232, 0, 65536, 232, 0, 0, 232, 0, 196608, 232, 0, 131073, 232, 0, 262145, 232, 0, 196609, 232, 0, 262146, 232, 0, 196610, 232, 0, 131074, 232, 0, 65537, 232, 0, 1, 232, 0, -65536, 232, 0, -65535, 232, 0, 2, 232, 0, -65534, 232, 0, 65538, 232, 0, 131075, 232, 0, 196611, 232, 0, 65539, 232, 0, 3, 232, 0, 131076, 232, 0, 262147, 232, 0, 327682, 232, 0, 327681, 232, 0, 393218, 236, 0, 262143, 232, 0, 262144, 232, 0, 327680, 232, 0, 393217, 232, 0, 458753, 232, 0, 393219, 232, 0, 458754, 236, 0, 524290, 232, 0, 589825, 232, 0, 262148, 232, 0, 327683, 236, 0, 327684, 232, 0, 262149, 232, 0, 196612, 232, 0, 393220, 232, 0, 458755, 232, 0, 524291, 232, 0, 589826, 232, 0, 655361, 232, 0, 589824, 232, 0, 524289, 232, 0, 655362, 232, 0, 720898, 232, 0, 458752, 232, 0, 393216, 232, 0, 393215, 232, 0)
+layer_1/name = "items"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 1
+layer_1/tile_data = PackedInt32Array(524290, 236, 0, 458753, 236, 0)
